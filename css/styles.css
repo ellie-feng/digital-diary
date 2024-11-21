@@ -1,0 +1,220 @@
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Includes padding and border in width/height calculations */
+}
+/* Navbar styles */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0f4476;
+  color: #c3c5b8;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: none;
+}
+
+li a {
+  display: block;
+  color: #c3c5b8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #c3c5b8;
+  color: #000000;
+}
+
+.active {
+  background-color: #c3c5b8;
+  color: #0f4476;
+}
+
+p {
+  width: 500px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+
+
+.beige {
+  white-space: normal;
+  min-height: 100vh; /* Ensures it covers at least the viewport height */
+  width: 100vw; /* Full width of the viewport */
+  background-color: #0f4476;
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  color: #c3c5b8;
+}
+
+
+.pdf-viewer {
+            width: 50%;
+            height: 50vh;
+            border: none;
+}
+
+
+/* Blog container to center content */
+.blog-container {
+  background-color: #0f4476; /* Blue background */
+  padding: 50px 0; /* Padding around the entire section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the posts horizontally */
+  gap: 20px; /* Space between each blog post */
+}
+
+/* Blog post styling */
+.blog-post {
+  background-color: #c3c5b8; /* Beige background for the post */
+  width: 50vw; /* Width of each blog post */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: visible; /* Ensure content is not clipped */
+  word-wrap: break-word; /* Allow long words to wrap */
+}
+
+/* Blog post text styling */
+.blog-post h2 {
+  margin-top: 0;
+  color: #0f4476; /* Blue color for titles */
+}
+
+
+/* Blog post paragraph styling */
+.blog-post p {
+  color: #333333; /* Dark text for readability */
+  text-align: justify; /* Align text neatly */
+  white-space: normal; /* Ensure text wraps naturally */
+  overflow: visible; /* Allow full text to display */
+  margin: 0 auto; /* Center the text */
+  max-width: 100%; /* Prevent text from overflowing */
+  line-height: 1.6; /* Improve readability */
+}
+
+
+
+/* Main container */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 100px auto; /* Adjust margin to account for navbar */
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of portfolio items */
+  justify-content: space-evenly; /* Distribute items with equal spacing */
+  gap: 20px; /* Space between items */
+}
+
+/* Portfolio card container */
+.portfolio-item {
+  background-color: #c3c5b8; /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Ensures content stays inside the card */
+  padding: 16px; /* Internal spacing */
+  width: 250px; /* Adjust card width to allow multiple items per row */
+  text-align: center; /* Centers headings and links */
+}
+
+/* Adjusting the layout of the items */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping of items to the next line */
+  justify-content: space-evenly; /* Ensure items have space between them */
+}
+
+
+/* Portfolio item description */
+.portfolio-item p {
+  color: #333333; /* Dark text for readability */
+  font-size: 14px;
+  line-height: 1.5; /* Improves text readability */
+  text-align: justify; /* Optional: aligns text neatly */
+  word-wrap: break-word; /* Ensures long words break */
+  overflow-wrap: break-word; /* Breaks overly long words */
+  white-space: normal; /* Allows text to wrap naturally */
+  margin: 10px 0; /* Spacing above and below the text */
+  max-width: 100%; /* Ensures text doesn't exceed parent width */
+  overflow: visible; /* Prevents clipping of visible text */
+}
+
+/* Portfolio item title */
+.portfolio-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #0f4476; /* Dark blue for titles */
+}
+
+/* Portfolio item image */
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Slight rounding for images */
+  margin-bottom: 10px;
+}
+
+
+/* Portfolio item button */
+.portfolio-item a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0f4476; /* Button background color */
+  color: #ffffff; /* White text */
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+  background-color: #ffffff; /* Button hover background */
+  color: #0f4476; /* Button hover text color */
+  border: 1px solid #0f4476;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f4476;
+  color: #c3c5b8;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Bullet List Styles */
+ul.bullet-list {
+  list-style-type: disc;  /* Default bullet style */
+  margin: 20px;
+  padding-left: 40px;  /* Indentation */
+}
+
+ul.bullet-list li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f4476; /* Custom color for bullet list items */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;    /* Vertical centering */
+  height: 100%;           /* Optional: adjust container height */
+}
